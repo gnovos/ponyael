@@ -1,0 +1,28 @@
+<% title "Horse" %>
+
+<p>
+  <strong>Image Url:</strong>
+  <%= @horse.image_url %>
+</p>
+<p>
+  <strong>Breed:</strong>
+  <%= @horse.breed %>
+</p>
+<p>
+  <strong>Price:</strong>
+  <%= @horse.price %>
+</p>
+<p>
+  <strong>Cross:</strong>
+  <%= @horse.cross %>
+</p>
+<p>
+  <strong>Name:</strong>
+  <%= @horse.name %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_horse_path(@horse) %> |
+  <%= link_to "Destroy", @horse, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", horses_path %>
+</p>

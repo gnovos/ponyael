@@ -1,0 +1,25 @@
+<% title "Horses" %>
+
+<table>
+  <tr>
+    <th>Image Url</th>
+    <th>Breed</th>
+    <th>Price</th>
+    <th>Cross</th>
+    <th>Name</th>
+  </tr>
+  <% for horse in @horses %>
+    <tr>
+      <td><%= horse.image_url %></td>
+      <td><%= horse.breed %></td>
+      <td><%= horse.price %></td>
+      <td><%= horse.cross %></td>
+      <td><%= horse.name %></td>
+      <td><%= link_to "Show", horse %></td>
+      <td><%= link_to "Edit", edit_horse_path(horse) %></td>
+      <td><%= link_to "Destroy", horse, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Horse", new_horse_path %></p>

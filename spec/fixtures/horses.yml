@@ -1,0 +1,13 @@
+one:
+  image_url: MyString
+  breed: MyString
+  price: MyString
+  cross: MyString
+  name: MyString
+
+two:
+  image_url: MyString
+  breed: MyString
+  price: MyString
+  cross: MyString
+  name: MyString

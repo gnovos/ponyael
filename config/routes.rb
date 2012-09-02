@@ -1,4 +1,6 @@
 Ponyael::Application.routes.draw do
+  resources :horses
+
   authenticated :user do
     root :to => 'home#index'
   end
